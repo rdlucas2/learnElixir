@@ -1,4 +1,8 @@
 defmodule Rocket do
+  def say_hello do
+    Code.require_file("hello-world.exs")
+  end
+
   def start_launch_sequence do
     seconds = 10
 
@@ -18,4 +22,5 @@ defmodule Rocket do
   end
 end
 
+Rocket.say_hello()
 Rocket.start_launch_sequence()
